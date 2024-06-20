@@ -26,6 +26,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 3.75em;
+    padding-bottom: 10px;
 }
 .header{
     position: fixed;
@@ -33,6 +34,7 @@ body{
     top: 0;
 }
 .header-content{
+    background: #f7f7f7;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,8 +47,18 @@ body{
     font-weight: bold;
     
 }
-.logo span{
-
+span{
+    color: #f95959;
+}
+p{
+    max-width: 350px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.boxes{
+    padding-top: 10px;
 }
 #principal{
     text-align: center;
@@ -54,7 +66,7 @@ body{
 .nav{
     position: fixed;
     top: 60px;
-    background-color: white;
+    background-color: #f7f7f7;
     height: 100%;
     left: 0 ;
     width: 100%;
@@ -69,6 +81,7 @@ body{
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+    gap: 30px;
 }
 /* .nav-item{
 
@@ -78,9 +91,10 @@ h1 .pic{
 }
 
 .nav-link{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
     transition: all 0.4s;
+    color: #f95959;
 }
 .nav-link:hover, .nav-link:focus {
     color: red;
@@ -102,7 +116,7 @@ h1 .pic{
 .bar{
     height: 2px;
     width: 27px;
-    background-color: blue;
+    background-color: black;
     margin: 5px 0;
     opacity: 0.8;
 }
@@ -116,7 +130,7 @@ h1 .pic{
 /*Main*/
 .boxes{
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(1,2fr);
     gap: 1rem;
 }
 img{
@@ -137,7 +151,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    gap: 20px;
+    flex-direction: column;
 }
 .container{
     /* display: flex;
@@ -169,7 +184,7 @@ form .button{
 }
 .link-button{
     margin-right: 10px;
-    background-color: #4B5C86;
+    background-color: #f95959;
     padding: 10px 20px;
     color: white;
     border-radius: 10px;
@@ -179,8 +194,8 @@ form .button{
 }
 .link-button:hover{
     background-color: white;
-    border: 1px solid #4B5C86;
-    color: #4B5C86;
+    border: 1px solid #f95959;
+    color: #f95959;
 }
 
 .span-anotation{
@@ -196,7 +211,13 @@ h2{
 #proyectos{
     padding: 15px;
 }
+
 /* Footer */
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
 footer{
     background: #f95959;
     /* display: flex; */
@@ -284,10 +305,18 @@ footer{
         color: #f95959;
     }
     .boxes{
-        grid-template-columns: repeat(5 ,1fr);
+        grid-template-columns: repeat(4 ,1fr);
+        justify-items: center;
+        max-width: 1300px;
+        padding: 10px;
     }
     .main{
-        padding-left: 250px;
-        padding-right: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .informacion{
+        max-width: 1000px;
+        text-align: justify;
     }
 }
