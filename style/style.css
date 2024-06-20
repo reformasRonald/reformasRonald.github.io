@@ -94,7 +94,8 @@ h1 .pic{
     font-size: 20px;
     font-weight: 700;
     transition: all 0.4s;
-    color: #f95959;
+    color: black;
+    font-weight: 600;
 }
 .nav-link:hover, .nav-link:focus {
     color: red;
@@ -225,7 +226,17 @@ footer{
     align-self: center;
     align-content: center;
 }
+.footer > p{
+    font-size: 13px;
+}
+.contacto > p{
+    font-size: 13px;
+}
 @media only screen and (min-width: 768px) {
+    p{
+        font-size: 20px;
+        max-width: 700px;
+    }
     .logo{
         /* font-size: 35px; */
         padding-top: 10px;
@@ -261,27 +272,31 @@ footer{
         font-weight: 500;
     }
     .boxes{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .main{
         padding-left: 30px;
         padding-right: 30px;
     }
-    .searchInput{
-        display: unset;
-        visibility: visible;
-        
+    .box-center{
+        flex-direction: unset;
     }
-    .querrySearch{
-        width: 700px;
-        height: 45px;
-        border: 0.5px gray solid;
-        border-radius: 10px;
-        outline: none;
+    .footer{
+        min-height: 100px;
     }
-    .querrySearch input{
-        padding-left: 10px;
+    .container > p{
+        font-size: 25px;
     }
+    .main>p{
+        font-size: 20px;
+    }
+    .footer > p{
+        font-size: 15px;
+    }
+    .contacto > p{
+        font-size: 15px;
+    }
+
 }
 @media only screen and (min-width: 992px) {
     #principal{
@@ -292,6 +307,7 @@ footer{
     }
     p{
         font-size: 23px;
+        max-width: none;
     }
     span{
         color: #f95959;
