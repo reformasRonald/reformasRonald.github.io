@@ -45,7 +45,9 @@ body{
     color: black;
     font-size: 23px;
     font-weight: bold;
-    
+}
+#logoCR{
+    width: 50px;
 }
 span{
     color: #f95959;
@@ -232,6 +234,9 @@ footer{
 .contacto > p{
     font-size: 13px;
 }
+#quienesSomos{
+    padding-bottom: 100px;
+}
 @media only screen and (min-width: 768px) {
     p{
         font-size: 20px;
@@ -295,6 +300,12 @@ footer{
     }
     .contacto > p{
         font-size: 15px;
+    }
+    #proyectos{
+        max-width: 1000px;
+    }
+    #logoCR{
+        width: 65px;
     }
 
 }
